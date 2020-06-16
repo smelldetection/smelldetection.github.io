@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Applying Machine Learning to Customized Smell Detection: A Multi-Project Study</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('body').scrollspy({
+			target : '#mainNavBar'
+		})
+	});
+</script>
+
+</head>
+<body>
+
+	<nav id="mainNavBar" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">SBES 2020</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#abstract">Abstract <span
+							class="sr-only">(current)</span></a></li>
+
+					<li><a href="#downloads">Downloads</a></li>
+					<!--<li><a href="#references">References</a></li>-->
+
+				</ul>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+	<div class="container container-gral">
+
+		<div class="page-title">
+			<h1>
+				Applying Machine Learning to Customized Smell Detection: A Multi-Project Study<br>
+			</h1>
+		</div>
+		<br>
+		<p class="text-justify">
+			This website contains complementary data to the
+			<!--submitted-->
+			paper.
+		</p>
+
+		<h3 id="abstract" class="page-header">Abstract</h3>
+		<p class="text-justify"> 
+
+			Code smells are considered symptoms of poor implementation choices, which may hamper the software maintenance and evolution. Hence, code smells should be detected as early as possible to avoid software quality degradation. 
+			Unfortunately, detecting code smells is not a trivial task. Some preliminary studies investigated and concluded that machine learning (ML) techniques are a promising way to better support smell detection. However, these techniques are hard to be customized, such as to detect only specific types of code smell. Yet, ML techniques usually require numerous code examples to be trained (composing a relevant dataset) and achieve satisfactory accuracy, i.e. leading to late detection of code smells. Thus, a prevailing challenge is the early customized detection of code smells taking into account the typical limited training data. 
+			In this direction, this paper reports a study in which we collected code smells, from ten active projects, that were actually refactored by developers, differently from studies that rely on inferred code smells. These smells were used for evaluating of the accuracy regarding early detection of code smells by seven ML techniques.
+			Once we take into account such smells that were considered as important by developers, the ML techniques are able to customize the detection in order to focus on smells observed as relevant in the investigated systems. The results showed that all the analyzed techniques are sensitive to the type of smell and obtained good results for the majority of them, especially JRip and Random Forest. However, different from previous studies, the ML techniques did not need a high number of examples to reach their best results, which reduces the effort for training the techniques, enabling the use of this technique in smaller projects.
+
+		</p>
+
+		<h3 id="downloads" class="page-header">Downloads</h3>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Artifact</th>
+					<th>Description</th>
+				</tr>
+
+				<!-- Instancias -->
+				<tr>
+					<th scope="row">1</th>
+					<td><a href="download/features.rar"
+						target="_blank">Smells instances and features.csv</a></td>
+					<td>This file contains the features of the (non-)smelly instances codes.
+				</tr>
+			
+			</thead>
+			<tbody>
+			
+
+			</tbody>
+		</table>
+
+		<div style="font-weight: bold;">
+			Features used in the study:
+		</div>
+		<div style="max-width: 50px;">
+			AvgCyclomatic, AvgCyclomaticModified, AvgCyclomaticStrict, AvgEssential, AvgLine, AvgLineBlank, AvgLineCode, AvgLineComment, CountClassBase, CountClassCoupled, CountClassDerived, CountDeclClassMethod, CountDeclClassVariable, CountDeclInstanceMethod, CountDeclInstanceVariable, CountDeclMethod, CountDeclMethodAll, CountDeclMethodDefault, CountDeclMethodPrivate, CountDeclMethodProtected, CountDeclMethodPublic, CountLine, CountLineBlank, CountLineCode, CountLineCodeDecl, CountLineCodeExe, CountLineComment, CountSemicolon, CountStmt, CountStmtDecl, CountStmtExe, MaxCyclomatic, MaxCyclomaticModified, MaxCyclomaticStrict, MaxEssential, MaxInheritanceTree, MaxNesting, PercentLackOfCohesion, RatioCommentToCode, SumCyclomatic, SumCyclomaticModified, SumCyclomaticStrict, SumEssential
+		</div>
+
+</body>
+</html>
+
